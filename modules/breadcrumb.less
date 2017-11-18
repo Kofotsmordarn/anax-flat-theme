@@ -1,0 +1,41 @@
+.next-previous {
+    .next,
+    .previous {
+        width: 50%;
+    }
+
+    .next {
+        float: right;
+        text-align: right;
+    }
+}
+
+.breadcrumb-wrap {
+    margin-bottom: 22px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+
+        &::after {
+            content: " » ";
+        }
+    }
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: #3f3fab;
+    }
+
+    a:active {
+        color: blue;
+    }
+}

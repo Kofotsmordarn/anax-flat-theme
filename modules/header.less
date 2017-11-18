@@ -9,38 +9,23 @@
 
 @maxButtonFontSize: 2em;
 
-// Style navbar
-.rm-desktop li {
-    background-color: #096;
-}
-
-@navbarItemBgColor: #096;
-
-
 // Size each item in the header
 .site-logo-text,
-.navbar2,
+.navbar2{
+    width: 30%;
+}
 .profile {
-    float: left;
+    display: none;
     width: 30%;
 }
 
 .site-header {
-    height: 80px;
-}
-
-@media screen and (max-width: 900px) {
-    .site-logo-text {
-        width: 40%;
-    }
-
-    .navbar2 {
-        width: 50%;
-    }
-
-    .profile {
-        width: 10%;
-    }
+    display: flex;
+    background-color: #2b2b2b;
+    color: #afafaf;
+    height: auto;
+    min-height: 60px;
+    align-items: center;
 }
 
 // Site title
@@ -49,5 +34,21 @@
 
     a {
         text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .site-logo-text {
+        width: 40%;
+    }
+
+    .navbar2 {
+        display: none;
+    }
+
+    .profile {
+        display: block;
+        width: 10%;
     }
 }
