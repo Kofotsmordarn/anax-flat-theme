@@ -9,8 +9,6 @@
 // Utility variable, you should never need to modify this
 @totalWidth: 100% / (@columns * (@columnWidth + @gutterWidth));
 
-
-
 /**
  * A small clearfix:
  * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
@@ -23,8 +21,6 @@
     }
 }
 
-
-
 /**
  * Wrap grid in a container.
  */
@@ -34,8 +30,6 @@
     margin-right: auto;
     margin-left: auto;
 }
-
-
 
 /**
  * All columns must be wrapped in a row.
@@ -49,8 +43,6 @@
 
     .clearfix();
 }
-
-
 
 /**
  * Create a column spanning @col columns.
@@ -66,8 +58,6 @@
     // padding: 0px 8px;
  }
 
-
-
 /**
  * Push a column @offset columns.
  */
@@ -75,16 +65,12 @@
     margin-left: @totalWidth * @offset * (@gutterWidth + @columnWidth) + @totalWidth * @gutterWidth / 2;
 }
 
-
-
 /**
  * Pull a column left @offset columns.
  */
 .pull(@offset: 1) {
     margin-left: -1 * @totalWidth * @offset * (@gutterWidth + @columnWidth) + @totalWidth * @gutterWidth / 2;
 }
-
-
 
 /**
  * Pull a column right @offset columns.
