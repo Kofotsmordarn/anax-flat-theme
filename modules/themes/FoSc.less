@@ -1,0 +1,109 @@
+html.fosc & {
+    body {
+        .font();
+        background-color: #2d3238;
+        color: #acb8bf;
+    }
+
+    .outer-wrap-header,
+    .outer-wrap-footer {
+        background-color: #22252d;
+    }
+
+    .inner-wrap-footer {
+      background-image: url("../img/footerbg.png");
+      background-repeat: no-repeat;
+      padding-top: 90px;
+    }
+
+    .site-header {
+        color: #98C379;
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #98C379;
+        }
+    }
+
+    .site-logo-text{
+        a {
+            color: #d19a66;
+        }
+
+        a:visited {
+            color: #d19a66;
+        }
+    }
+
+    .main {
+        background-color: #41464D;
+        transform: skewY(-5deg);
+        margin-top: 48px; // Would use calc to calculate height of margin. Current formula: calc(tan(5) * 960 / 2 + 6).
+        margin-bottom: 48px; // Would use calc to calculate height of margin. Current formula: calc(tan(5) * 960 / 2 + 6).
+        padding-bottom: 48px; // Would use calc to calculate height of margin. Current formula: calc(tan(5) * 960 / 2 + 6).
+    }
+
+    .main article {
+      transform: skewY(5deg);
+      margin-top: -58px; // Would use calc to calculate height of margin. Current formula: -calc(tan(5) * 960 / 2 + 16).
+    }
+
+    .main .byline {
+      transform: skewY(5deg);
+    }
+
+    .main.has-sidebar article {
+      transform: skewY(5deg);
+      margin-top: -24px; // Not a calculated value. Set by look of site, you could probably do -calc((tan(5) * 960 / 2 + 6) / 2)
+    }
+
+    .main .next-previous {
+      transform: skewY(5deg);
+    }
+
+    .main .next-previous:first-of-type {
+      margin-top: -58px; // Would use calc to calculate height of margin. Current formula: -calc(tan(5) * 960 / 2 + 16).
+    }
+
+    ul.toc {
+        background-color: #41464D;
+        transform: skewY(-5deg);
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    ul.toc li {
+        transform: skewY(5deg);
+    }
+
+    h1, h2, h3, h4, h5, h6, th {
+        color: #d19a66;
+    }
+
+    table, table td {
+        border: 1px solid #575b61;
+    }
+
+    code, .code {
+        color: black;
+    }
+
+    a {
+        color: #98C379;
+    }
+
+    a:visited {
+        color: #709059;
+    }
+
+    a:hover {
+        color: #7CCD42;
+    }
+
+    a:active {
+        color: #35432A;
+    }
+}
